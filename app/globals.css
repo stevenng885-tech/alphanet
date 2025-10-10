@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --white: #fff;
+  --first: #011a3a;
+  --second: #08469b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+header {
+  background-color: var(--first);
+  color: var(--white);
+}
+
+button:hover {
+  cursor: pointer;
+}
