@@ -11,16 +11,11 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import { FaTiktok } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 
 const navigation = [
     {
         title: "Trang chủ",
         href: "/"
-    },
-    {
-        title: "Giới thiệu",
-        href: "#"
     },
     {
         title: "Giải đấu",
@@ -38,7 +33,7 @@ const navigation = [
 
 const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false)
-    const [isContactOpen, setIsContactOpen] = React.useState(true)
+    const [isContactOpen, setIsContactOpen] = React.useState(false)
     return (
         <>
             <header className='fixed w-full py-2.5 text-white z-10 top-0 left-0 right-0 bg-[var(--second)]'>
