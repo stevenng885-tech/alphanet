@@ -1,3 +1,11 @@
 .mobileMenu {
     animation: 1s linear
 }
+
+.text-troke1 {
+    -webkit-text-stroke: 1px var(--seventh);
+}
+
+.text-troke2 {
+    -webkit-text-stroke: 1px #fff
+}

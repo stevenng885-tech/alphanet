@@ -1,0 +1,9 @@
+@font-face {
+    font-family: BBHSansBogle;
+    src: url(/public/fonts/BBHSansBogle-Regular.ttf);
+}
+
+.BBHSansBogle {
+    font-family: BBHSansBogle !important;
+    /* use font */
+}

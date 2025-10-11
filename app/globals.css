@@ -6,6 +6,11 @@
   --white: #fff;
   --first: #011a3a;
   --second: #08469b;
+  --third: #F5F7F6;
+  --fourth: #908f8f;
+  --fiveth: #C1ED11;
+  --sixth: #c1ed1126;
+  --seventh: #ef9800;
 }
 
 @theme inline {
@@ -20,10 +25,11 @@
   }
 }
 
+/* 
 header {
   background-color: var(--first);
   color: var(--white);
-}
+} */
 
 button:hover {
   cursor: pointer;
