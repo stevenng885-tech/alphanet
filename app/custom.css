@@ -9,3 +9,8 @@
 .text-troke2 {
     -webkit-text-stroke: 1px #fff
 }
+
+.divider-right::after {
+    border-right: 1px var(--fourth);
+    height: 100%;
+}

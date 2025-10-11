@@ -1,39 +1,73 @@
-import PrimaryDivider from '@/components/divider/PrimaryDivider'
 import Image from 'next/image'
 import React from 'react'
 
+const cousers = [
+    {
+        name: "Khóa Học Price Action Nâng Cao",
+        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
+        imgSrc: "/assets/courses/course_1.png",
+    },
+    {
+        name: "Khóa Học Price Action Nâng Cao",
+        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
+        imgSrc: "/assets/courses/course_1.png",
+    },
+    {
+        name: "Khóa Học Price Action Nâng Cao",
+        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
+        imgSrc: "/assets/courses/course_1.png",
+    },
+    {
+        name: "Khóa Học Price Action Nâng Cao",
+        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
+        imgSrc: "/assets/courses/course_1.png",
+    },
+    {
+        name: "Khóa Học Price Action Nâng Cao",
+        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
+        imgSrc: "/assets/courses/course_1.png",
+    },
+    {
+        name: "Khóa Học Price Action Nâng Cao",
+        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
+        imgSrc: "/assets/courses/course_1.png",
+    },
+    {
+        name: "Khóa Học Price Action Nâng Cao",
+        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
+        imgSrc: "/assets/courses/course_1.png",
+    },
+    {
+        name: "Khóa Học Price Action Nâng Cao",
+        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
+        imgSrc: "/assets/courses/course_1.png",
+    },
+]
+
 const Home = () => {
     return (
-        <div className='flex flex-col container m-auto py-10'>
-            <div className='flex justify-between w-full'>
-                <div className='flex flex-col gap-5'>
-                    <div className='text-2xl font-bold'>
-                        HiBT- giải đấu Futures cá nhân
-                    </div>
-                    <div>
-                        <span className='bg-[var(--third)] p-2 rounded'>Thi Đấu cá nhân</span>
-                    </div>
-                    <div>
-                        <span className='text-[var(--fourth)]'>Thời gian sự kiện:</span> 2025/10/15 00:00:00—2025/10/22 23:59:59
-                    </div>
-                    <div>
-                        <span className='text-[var(--fourth)]'>Số người tham gia:</span>  0 người
-                    </div>
-                    <div>
-                        <span className='text-[var(--fourth)]'>Thời gian bắt đầu hoạt động:</span>
-
-                    </div>
-                    <div>
-                        <button className='bg-[var(--fiveth)] py-2 px-5 rounded'>
-                            Chi tiết
-                        </button>
-                    </div>
+        <div className='w-full min-h-screen'>
+            <div className='pt-30 container mx-auto flex flex-col'>
+                <div className='text-black text-4xl font-bold mb-10'>
+                    Các khóa học tại Alpha Net:
                 </div>
-                <div className='rounded-xl overflow-hidden'>
-                    <Image src="/assets/tournaments/1.png" className='w-fit h-fit' alt='img' width={400} height={400} />
+                <div className='flex gap-10 justify-between flex-wrap'>
+                    {
+                        cousers.map((item, index) => {
+                            return <div key={item.name + index} className='rounded-xl flex flex-col p-5 gap-3 border divider-right min-w-[20%]'>
+                                <Image className='rounded-xl w-full h-full' alt='course' width={200} height={200} src={item.imgSrc} />
+                                <div className='font-bold text-xl'>{item.name}</div>
+                                <div className='text-[var(--fourth)] text-sm'>{item.description}</div>
+                                <button className='rounded border bg-[var(--second)] text-white py-2 px-4'>
+                                    Đăng ký ngay
+                                </button>
+                            </div>
+                        })
+                    }
+
                 </div>
             </div>
-            <PrimaryDivider />
+
         </div>
     )
 }
