@@ -17,13 +17,17 @@ const navigation = [
         title: "Trang chủ",
         href: "/"
     },
+    // {
+    //     title: "Giải đấu",
+    //     href: "/tournaments"
+    // },
     {
-        title: "Giải đấu",
-        href: "/tournaments"
+        title: "Kiến Thức",
+        href: "/courses"
     },
     {
-        title: "Khóa Học",
-        href: "/courses"
+        title: "Giới thiệu",
+        href: "/about-us"
     },
     // {
     //     title: "Tin tức",
@@ -36,7 +40,7 @@ const Header = () => {
     const [isContactOpen, setIsContactOpen] = React.useState(false)
     return (
         <>
-            <header className='fixed w-full py-2.5 text-white z-10 top-0 left-0 right-0 bg-[var(--second)]'>
+            <header className='fixed w-full py-2.5 text-white z-10 top-0 left-0 right-0 shadow-xl '>
                 <div className='container m-auto flex justify-between items-center p-2'>
                     <Link href='/' className='flex items-center gap-2'>
                         <Image alt='logo' width={50} height={50} src="/assets/logo.png" />

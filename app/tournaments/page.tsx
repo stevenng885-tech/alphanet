@@ -37,7 +37,6 @@ const tournaments = [
         startDate: "2025/09/2 23:59:59",
         imgURL: "/assets/tournaments/3.png"
     },
-
 ]
 
 const Home = () => {

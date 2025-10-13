@@ -14,3 +14,18 @@
     border-right: 1px var(--fourth);
     height: 100%;
 }
+
+.fade-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.closeIcon {
+    transform: rotate(45deg);
+    transition: 0.2s linear;
+}
+
+.plusIcon {
+    transform: rotate(0deg);
+    transition: 0.2s linear;
+}

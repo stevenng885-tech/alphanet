@@ -1,0 +1,56 @@
+@keyframes smoothBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes smoothLeft {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes smoothRight {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.smoothBottom {
+    animation: smoothBottom 1s linear;
+    transition: 1s;
+}
+
+.smoothLeft {
+    animation: smoothLeft 1s linear;
+    transition: 1s;
+}
+
+.smoothRight {
+    animation: smoothRight 1s linear;
+    transition: 1s;
+}
+
+.expanded {
+    height: fit-content;
+    transition: height 1s linear;
+}
