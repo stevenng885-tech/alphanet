@@ -11,6 +11,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import { FaTiktok } from "react-icons/fa";
+import ContactForm from './common/ContactForm';
 
 const navigation = [
     {
@@ -39,14 +40,14 @@ const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false)
     const [isContactOpen, setIsContactOpen] = React.useState(false)
     return (
-        <>
+        <React.Fragment>
             <header className='fixed w-full py-2.5 text-white z-10 top-0 left-0 right-0 shadow-xl '>
                 <div className='container m-auto flex justify-between items-center p-2'>
                     <Link href='/' className='flex items-center gap-2'>
                         <Image alt='logo' width={50} height={50} src="/assets/logo.png" />
                         <div className='text-xl font-bold'>ALPHA NET</div>
                     </Link>
-                    <ul className='h-full justify-around gap-10 items-center uppercase hidden md:flex'>
+                    <ul className='h-full justify-around gap-10 items-center uppercase hidden xl:flex'>
                         {
                             navigation.map((items) => {
                                 return <li className='cursor-pointer' key={items.title}>
@@ -58,7 +59,7 @@ const Header = () => {
                             <button onClick={() => setIsContactOpen(!isContactOpen)} className='uppercase shadow rounded-sm py-1 px-3 bg-white text-[var(--first)]'>Liên hệ</button>
                         </li>
                     </ul>
-                    <div className='md:hidden'>
+                    <div className='xl:hidden'>
                         <MdOutlineMenu onClick={() => setIsOpen(!isOpen)} size={40} />
                     </div>
                     <div className={`p-2 mobileMenu fixed ${isOpen ? "flex" : "hidden"} flex-col top-0 left-0 h-screen w-screen bg-[var(--first)] text-black `}>
@@ -81,57 +82,18 @@ const Header = () => {
                                 <div className='flex justify-center'>
                                     <Image src="/assets/logo/alpha.png" alt='logo' width={200} height={200} />
                                 </div>
+                                <div className='text-[var(--fourth)] text-center'>
+                                    Hãy để lại thông tin để chúng tôi có thể liên hệ với bạn nhanh nhất
+                                </div>
                                 <div className='p-5 rounded-xl flex flex-col gap-5'>
-                                    <form action="" className='flex flex-col gap-3 '>
-                                        <div className='border flex items-center rounded-xl p-3' >
-                                            <div className='border-r pr-5'>
-                                                <FaUser size={24} className='text-[var(--second)]' />
-                                            </div>
-                                            <input type="text" className='outline-0 px-5 w-full' placeholder='Tên Của Bạn' />
-                                        </div>
-                                        <div className='border flex items-center rounded-xl p-3'>
-                                            <div className='border-r pr-5'>
-                                                <IoIosMail size={24} className='text-[var(--second)]' />
-                                            </div>
-                                            <input type="text" className='outline-0 px-5 w-full' placeholder='Email' />
-                                        </div>
-                                        <div className='border flex items-center rounded-xl p-3'>
-                                            <div className='border-r pr-5'>
-                                                <FaPhoneAlt size={24} className='text-[var(--second)]' />
-                                            </div>
-                                            <input type="text" className='outline-0 px-5 w-full' placeholder='Số Điện Thoại' />
-                                        </div>
-                                        <button className='bg-[var(--second)] rounded-xl text-white uppercase py-2'>
-                                            Liên Hệ Ngay
-                                        </button>
-                                    </form>
-                                    <div className='flex gap-2 items-center'>
-                                        <div className='font-bold'>Hoặc Bạn có thể liên hệ chúng tôi qua:</div>
-                                        <div className="flex gap-5 text-xl text-[var(--second)]">
-                                            <a href='https://t.me/Crypt0vn' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
-                                                <FaTelegramPlane />
-                                            </a>
-                                            <a href='https://www.facebook.com/profile.php?id=100094833382394' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
-                                                <FaFacebookF />
-                                            </a>
-                                            <a href='https://zalo.me/g/yowula280' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
-                                                <SiZalo />
-                                            </a>
-                                            <a href='#' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
-                                                <FaTiktok />
-                                            </a>
-                                            <a href='tel:0586636343' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
-                                                <FaPhoneAlt />
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <ContactForm />
                                 </div>
                             </div>
                         </div>
                     </div>
                     : <></>
             }
-        </>
+        </React.Fragment>
     )
 }
 

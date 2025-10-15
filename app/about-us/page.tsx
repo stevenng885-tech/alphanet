@@ -19,12 +19,12 @@ const list = [
 
 export default function Home() {
     return (
-        <main className=" flex flex-col">
+        <main className="flex flex-col">
             <div className="w-full h-screen flex items-center relative">
                 <div className="container m-auto flex  gap-10 ">
                     <div className="text-white flex flex-col items gap-10 justify-center ">
                         <p className="text-8xl BBHSansBogle font-bold tracking-wider">
-                            <span className="text-troke1">CỘNG ĐỒNG </span><span className="text-[var(--seventh)] text-troke2">ALPHA NET</span>
+                            <span className="text-[var(--seventh)] text-troke2">ALPHA NET</span>
                         </p>
                         <p className="text-5xl text-[var(--seventh)] BBHSansBogle font-bold tracking-wider">
                             KIẾN THỨC THỰC CHIẾN, CẬP NHẬT TỨC THỜI
