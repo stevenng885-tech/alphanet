@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { addDoc, collection, setDoc } from "firebase/firestore";
+import { addDoc, collection, serverTimestamp, setDoc } from "firebase/firestore";
 
 import { FaUser } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -13,6 +13,8 @@ import { SiZalo } from "react-icons/si";
 import { FaTiktok } from "react-icons/fa";
 import { firebaseFireStore } from '@/shared/utils/firebaseClient';
 import { useForm, SubmitHandler } from "react-hook-form"
+import PrimaryButton from '../button/PrimaryButton';
+import { toast } from 'react-toastify';
 type Inputs = {
     name: string
     email: string
@@ -43,6 +45,7 @@ const rules = {
 } as const;
 
 const ContactForm = () => {
+    const [isLoading, setIsLoading] = React.useState(false)
     const {
         register,
         handleSubmit,
@@ -51,15 +54,20 @@ const ContactForm = () => {
 
     const onSubmit: SubmitHandler<Inputs> = async (data: Inputs) => {
         try {
+            setIsLoading(true)
             await addDoc(collection(firebaseFireStore, "contacts"), {
                 ...data,
+                createdDate: serverTimestamp(),
                 message: "just a test"
             })
+            toast.success("Thành Công, Chúng Tôi Sẽ Sớm Liên Hệ Với Bạn!!")
+            setIsLoading(false)
         } catch (error) {
+            setIsLoading(false)
+            toast.info("Hãy Thử Liên Hệ Với Chúng Tôi Bằng Phương Thức Khác!!")
             console.log(error)
         }
     }
-
     return (
         <div className='p-5 rounded-xl flex flex-col gap-5 w-full'>
             <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-5 '>
@@ -103,9 +111,9 @@ const ContactForm = () => {
                         </div>
                     }
                 </div>
-                <button type='submit' className='bg-[var(--second)] rounded-xl text-white uppercase py-2 flex gap-2 justify-center items-center'>
+                <PrimaryButton isLoading={isLoading} type='submit' >
                     Liên Hệ Ngay <IoIosSend />
-                </button>
+                </PrimaryButton>
             </form>
             <div className='flex gap-2 items-center flex-col'>
                 <div className='font-bold'>Hoặc Bạn có thể liên hệ chúng tôi qua:</div>
