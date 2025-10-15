@@ -5,6 +5,7 @@ import "./fonts.css";
 import "./animations.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { ToastContainer } from 'react-toastify';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,9 +17,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className="relative">
+        <ToastContainer />
         <Header />
         {children}
         {/* <Footer /> */}

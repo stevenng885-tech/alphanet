@@ -38,3 +38,7 @@ header {
 button:hover {
   cursor: pointer;
 }
+
+* {
+  scroll-behavior: smooth;
+}

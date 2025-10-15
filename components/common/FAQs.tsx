@@ -4,7 +4,7 @@ import { FaPlus } from "react-icons/fa";
 
 const fqas = [
     {
-        question: "Alphanet là cộng đồng gì ?",
+        question: "Alphanet là gì ?",
         anwser: "Alphanet là cộng đồng crypto & tài chính số hàng đầu Việt Nam, nơi quy tụ những người học và giao dịch nghiêm túc. Mục tiêu của chúng tôi là giúp thành viên hiểu rõ bản chất thị trường, phát triển kỹ năng và tư duy kỷ luật khi đầu tư."
     },
     {
@@ -16,8 +16,8 @@ const fqas = [
         anwser: "Không cần. Cộng đồng có lộ trình học cơ bản, video hướng dẫn chỉ báo, và hỗ trợ từ mentor để người mới dễ tiếp cận. Mọi người đều có thể bắt đầu từ con số 0."
     },
     {
-        question: "Làm sao để tham gia cộng đồng Alphanet?",
-        anwser: "Rất đơn giản, Truy cập kênh Telegram / Facebook “Cộng Đồng Alphanet. Điền form đăng ký → Nhận hướng dẫn tham gia nhóm"
+        question: "Làm sao để tham gia Alphanet?",
+        anwser: "Rất đơn giản, Truy cập kênh Telegram / Facebook Alphanet. Điền form đăng ký → Nhận hướng dẫn tham gia nhóm"
     },
 ]
 const FAQs = () => {
@@ -30,8 +30,8 @@ const FAQs = () => {
         }
     }
     return (
-        <div className='flex flex-col gap-5'>
-            <h1 className='text-3xl'>Câu hỏi thường gặp</h1>
+        <div className='flex flex-col gap-5 px-2'>
+            <h1 className='text-3xl text-center'>Câu hỏi thường gặp</h1>
             <div>
                 <ul className='flex flex-col gap-5'>
                     {
@@ -51,7 +51,6 @@ const FAQs = () => {
                                 {/* <div className={`text-xl text-[var(--fourth)] overflow-hidden  ${isExpand === index ? "block expanded" : "hidden h-[0px]"}`}>
                                     {item.anwser}
                                 </div> */}
-
                             </li>
                         })
                     }

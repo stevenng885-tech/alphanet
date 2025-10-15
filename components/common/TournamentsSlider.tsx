@@ -67,6 +67,20 @@ const TournamentsSlider = () => {
             }}
             modules={[Autoplay]}
             className="mySwiper flex gap-10 fade-mask"
+            breakpoints={{
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                820: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1248: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            }}
         >
             {
                 tournaments.map((tournament, index) => {
