@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 const fqas = [
     {
         question: "Alphanet là gì ?",
-        anwser: "Alphanet là cộng đồng crypto & tài chính số hàng đầu Việt Nam, nơi quy tụ những người học và giao dịch nghiêm túc. Mục tiêu của chúng tôi là giúp thành viên hiểu rõ bản chất thị trường, phát triển kỹ năng và tư duy kỷ luật khi đầu tư."
+        anwser: 'AlphaNet – Cộng đồng chia sẻ tri thức về thị trường số & công nghệ Blockchain \n\n AlphaNet là nơi kết nối những người yêu thích công nghệ, đam mê tìm hiểu về xu hướng chuyển đổi số và hệ sinh thái Blockchain.\nTại đây, các thành viên cùng nhau trao đổi kiến thức, cập nhật góc nhìn mới, và rèn luyện tư duy phân tích – kỷ luật – logic để hiểu sâu hơn về cách thị trường vận hành trong kỷ nguyên số.\n\n🎯 Sứ mệnh của AlphaNet là xây dựng một không gian học hỏi và phát triển lâu dài, nơi mỗi thành viên đều có thể:\n\nCập nhật thông tin và xu hướng công nghệ mới.\n\nMở rộng tư duy chiến lược, nâng cao kỹ năng phân tích dữ liệu và hành vi thị trường.\n\nTạo dựng tư duy chủ động, tự tin thích ứng với sự thay đổi của thời đại số.\n\n🚀 AlphaNet – Nơi tri thức và công nghệ hội tụ, cùng nhau phát triển trong thế giới số!'
     },
     {
         question: "Tham gia Alphanet có mất phí không ?",
@@ -45,16 +45,12 @@ const FAQs = () => {
                                         <FaPlus />
                                     </button>
                                 </div>
-                                {isExpand === index ? <span className='text-xl text-[var(--fourth)]'>
+                                {isExpand === index && <span className='text-xl text-[var(--fourth)]' >
                                     {item.anwser}
-                                </span> : <></>}
-                                {/* <div className={`text-xl text-[var(--fourth)] overflow-hidden  ${isExpand === index ? "block expanded" : "hidden h-[0px]"}`}>
-                                    {item.anwser}
-                                </div> */}
+                                </span>}
                             </li>
                         })
                     }
-
                 </ul>
             </div>
         </div>
