@@ -12,6 +12,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import { FaTiktok } from "react-icons/fa";
 import ContactForm from './common/ContactForm';
+import PrimaryDivider from './divider/PrimaryDivider';
 
 const navigation = [
     {
@@ -62,11 +63,24 @@ const Header = () => {
                     <div className='xl:hidden'>
                         <MdOutlineMenu onClick={() => setIsOpen(!isOpen)} size={40} />
                     </div>
-                    <div className={`p-2 mobileMenu fixed ${isOpen ? "flex" : "hidden"} flex-col top-0 left-0 h-screen w-screen bg-[var(--first)] text-black `}>
-                        <div className='flex justify-end'>
+                    <div className={`py-5 px-2 mobileMenu fixed ${isOpen ? "flex" : "hidden"} flex-col top-0 left-0 h-screen w-screen bg-[var(--nineth)] text-black `}>
+                        <div className='flex justify-end text-white'>
                             <button>
                                 <IoMdClose onClick={() => setIsOpen(!isOpen)} size={40} />
                             </button>
+                        </div>
+                        <div className='flex flex-col gap-5 text-white justify-center text-center text-xl pt-10'>
+                            {
+                                navigation.map((items) => {
+                                    return <button onClick={() => setIsOpen(!isOpen)} className='cursor-pointer flex-col flex' key={items.title}>
+                                        <Link href={items.href}>{items.title}</Link>
+                                        <PrimaryDivider />
+                                    </button>
+                                })
+                            }
+                            <a href='/#contact'>
+                                <button onClick={() => setIsOpen(!isOpen)} className='uppercase shadow rounded-sm py-1 px-10 py-2 bg-white text-[var(--first)]'>Liên hệ</button>
+                            </a>
                         </div>
                     </div>
                 </div>
