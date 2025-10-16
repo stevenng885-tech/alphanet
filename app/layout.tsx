@@ -6,6 +6,7 @@ import "./animations.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ToastContainer } from 'react-toastify';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: "Alpha Net",
@@ -26,6 +27,7 @@ export default function RootLayout({
         {children}
         {/* <Footer /> */}
       </body>
+      <GoogleAnalytics gaId="G-TDYXQEWDT9" />
     </html>
   );
 }
