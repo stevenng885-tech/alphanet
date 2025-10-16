@@ -4,13 +4,6 @@ import React from 'react'
 import { MdOutlineMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import Link from 'next/link';
-import { FaUser } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaTelegramPlane } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { SiZalo } from "react-icons/si";
-import { FaTiktok } from "react-icons/fa";
 import ContactForm from './common/ContactForm';
 import PrimaryDivider from './divider/PrimaryDivider';
 

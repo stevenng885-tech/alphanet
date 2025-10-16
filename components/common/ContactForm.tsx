@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { addDoc, collection, serverTimestamp, setDoc } from "firebase/firestore";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 import { FaUser } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -58,7 +58,7 @@ const ContactForm = () => {
             await addDoc(collection(firebaseFireStore, "contacts"), {
                 ...data,
                 createdDate: serverTimestamp(),
-                message: "just a test"
+                message: "user data"
             })
             toast.success("Thành Công, Chúng Tôi Sẽ Sớm Liên Hệ Với Bạn!!")
             setIsLoading(false)
