@@ -12,21 +12,21 @@ const navigation = [
         title: "Trang chủ",
         href: "/"
     },
-    // {
-    //     title: "Giải đấu",
-    //     href: "/tournaments"
-    // },
-    {
-        title: "Kiến Thức",
-        href: "/courses"
-    },
     {
         title: "Giới thiệu",
         href: "/about-us"
     },
+    {
+        title: "Kiến Thức",
+        href: "/courses"
+    },
     // {
-    //     title: "Tin tức",
-    //     href: "#"
+    //     title: "Giải đấu",
+    //     href: "/tournaments"
+    // },
+    // {
+    //     title: "feedback",
+    //     href: "/feedback"
     // },
 ]
 

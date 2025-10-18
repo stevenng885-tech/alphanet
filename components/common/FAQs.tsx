@@ -30,10 +30,10 @@ const FAQs = () => {
         }
     }
     return (
-        <div className='flex flex-col gap-5 px-2'>
+        <div className='flex flex-col gap-5 px-2 text-black'>
             <h1 className='text-3xl text-center'>Câu hỏi thường gặp</h1>
             <div>
-                <ul className='flex flex-col gap-5'>
+                <ul className='flex flex-col gap-5 text-white'>
                     {
                         fqas.map((item, index) => {
                             return <li onClick={() => hanldeExpand(index)} key={item.question + index} className='cursor-pointer py-5 px-10 w-full bg-[var(--eleventh)] rounded-xl flex flex-col gap-5'>

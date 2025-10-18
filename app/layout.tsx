@@ -4,7 +4,6 @@ import "./custom.css";
 import "./fonts.css";
 import "./animations.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { ToastContainer } from 'react-toastify';
 import { GoogleAnalytics } from '@next/third-parties/google'
 
@@ -18,9 +17,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
-    <html lang="en">
+    <html lang="vi">
       <body className="relative">
         <ToastContainer />
         <Header />

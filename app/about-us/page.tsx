@@ -20,7 +20,7 @@ const list = [
 export default function Home() {
     return (
         <main className="flex flex-col">
-            <div className="w-full h-screen flex items-center relative">
+            <div className="w-full h-screen flex items-center relative overflow-hidden">
                 <div className="container m-auto flex  gap-10 ">
                     <div className="text-white flex flex-col items gap-10 justify-center ">
                         <p className="text-8xl BBHSansBogle font-bold tracking-wider">
@@ -38,7 +38,10 @@ export default function Home() {
                     </div>
 
                 </div>
-                <Image src="/assets/home-bg.png" alt="baner" width={2000} height={2000} className="w-screen h-screen absolute top-0 left-0 z-[-1]" />
+                <video className='absolute top-0 left-0 right-0 bottom-0 min-w-full min-h-screen z-[-10]' autoPlay={true} muted loop id="myVideo">
+                    <source src="/assets/videos/alphanet-bg-video1.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                </video>
             </div>
             <div>
                 <div className="container m-auto py-14">
@@ -56,6 +59,9 @@ export default function Home() {
                         }
                     </div>
                 </div>
+            </div>
+            <div>
+
             </div>
         </main>
     );

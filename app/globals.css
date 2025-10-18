@@ -42,3 +42,8 @@ button:hover {
 * {
   scroll-behavior: smooth;
 }
+
+.feedback {
+  background:
+    linear-gradient(135deg, #0E4E88 0%, #1A7CF0 40%, #FF7A45 75%, #FFC155 100%);
+}
