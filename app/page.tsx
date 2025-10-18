@@ -1,57 +1,67 @@
-import React from 'react'
-import TournamentsSlider from "@/components/common/TournamentsSlider";
-import FAQs from '@/components/common/FAQs';
-import Contact from '@/components/common/Contact';
-import PrimaryLazyLoading from '@/components/lazy/PrimaryLazyLoading';
+import Image from "next/image";
+const list = [
+    {
+        title: "Hệ thống khóa học chỉ báo",
+        description: "Cộng đồng Crypto & tài chính",
+        iconSrc: "/assets/icons/desktop-computer.png"
+    },
+    {
+        title: "Cộng Đồng Mạnh Mẽ",
+        description: "",
+        iconSrc: "/assets/icons/people.png"
+    },
+    {
+        title: "Tin Tức TứcThời",
+        description: "Tạo Lịch, Kết Nối",
+        iconSrc: "/assets/icons/document.png"
+    },
+]
 
 export default function Home() {
     return (
-        <main className=" min-w-full min-h-screen">
-            <div className="text-white flex flex-col gap-20 ">
-                <div className='bg-[var(--nineth)]'>
-                    <div className='py-30 container mx-auto flex flex-col gap-20 '>
-                        <div className="flex flex-col xl:max-w-[70vw] gap-10 smoothBottom text-center xl:text-left">
-                            <span className="text-3xl xl:text-8xl capitalize">
-                                Các Giải Đấu Mà Alpha Net Đã tham gia
-                            </span>
-                            <span className="text-xl` xl:text-2xl text-[var(--fourth)] capitalize  !duration-[2s]">
-                                Xem qua các giải đấu mà alpha net đã tham gia
-                            </span>
-                        </div>
-                        {/* <div>
-                            <PrimaryLazyLoading time={500}>
-                                <TournamentsSlider />
-                            </PrimaryLazyLoading>
-                        </div> */}
-                        <div>
-                            <div className="flex justify-between flex-col xl:flex-row text-center xl:text-left gap-5">
-                                <div className="flex flex-col gap-2 smoothRight">
-                                    <span className="text-4xl capitalize">
-                                        Bạn muốn đăng ký tham gia giải đấu ?
-                                    </span>
-                                    <span className="text-[var(--fourth)] text-xl">
-                                        Gia nhập ngay Alpha Net để được hỗ trợ
-                                    </span>
+        <main className="flex flex-col">
+            <div className="w-full h-screen flex items-center relative overflow-hidden">
+                <div className="container m-auto flex  gap-10 ">
+                    <div className="text-white flex flex-col items gap-10 justify-center ">
+                        <p className="text-8xl BBHSansBogle font-bold tracking-wider">
+                            <span className="text-[var(--seventh)] text-troke2">ALPHA NET</span>
+                        </p>
+                        <p className="text-5xl text-[var(--seventh)] BBHSansBogle font-bold tracking-wider">
+                            KIẾN THỨC THỰC CHIẾN, CẬP NHẬT TỨC THỜI
+                        </p>
+                        <p className="text-2xl">
+                            Cộng Đồng Crypto & tài chính hàng đầu tại Việt Nam, nơi chia sẻ kiến thức và tin tức thị trường mỗi ngày
+                        </p>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100094833382394" className="bg-[var(--second)] w-fit rounded p-2 px-5 text-2xl uppercase">
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+
+                </div>
+                <video className='absolute top-0 left-0 right-0 bottom-0 min-w-full min-h-screen z-[-10]' autoPlay={true} muted loop id="myVideo">
+                    <source src="/assets/videos/alphanet-bg-video1.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <div>
+                <div className="container m-auto py-14">
+                    <div className="flex justify-between">
+                        {
+                            list.map((item, index) => {
+                                return <div key={index} className="flex flex-col gap-5 items-center">
+                                    <div className="flex justify-center">
+                                        <Image src={item.iconSrc} width={120} height={120} alt="icon" />
+                                    </div>
+                                    <p className="font-bold uppercase text-2xl"> {item.title}</p>
+                                    <p className="text-xl"> {item.description}</p>
                                 </div>
-                                <div className='mx-10 smoothLeft'>
-                                    <a href="/#contact">
-                                        <button className="uppercase bg-[var(--second)] p-5 text-xl rounded-xl">
-                                            Đăng ký ngay +
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                            })
+                        }
                     </div>
                 </div>
-                <div className='container mx-auto '>
-                    <FAQs />
-                </div>
-                <div className='bg-[var(--nineth)]'>
-                    <div className='container mx-auto'>
-                        <Contact />
-                    </div>
-                </div>
+            </div>
+            <div>
+
             </div>
         </main>
     );

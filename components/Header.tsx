@@ -35,7 +35,7 @@ const Header = () => {
     const [isContactOpen, setIsContactOpen] = React.useState(false)
     return (
         <React.Fragment>
-            <header className='fixed w-full py-2.5 text-white z-10 top-0 left-0 right-0 shadow-xl '>
+            <header className='fixed w-full py-2.5 text-white z-10 top-0 left-0 right-0 shadow-xl bg-[var(--nineth)]'>
                 <div className='container m-auto flex justify-between items-center p-2'>
                     <Link href='/' className='flex items-center gap-2'>
                         <Image alt='logo' width={50} height={50} src="/assets/logo.png" />
@@ -50,14 +50,14 @@ const Header = () => {
                             })
                         }
                         <li>
-                            <button onClick={() => setIsContactOpen(!isContactOpen)} className='uppercase shadow rounded-sm py-1 px-3 bg-white text-[var(--first)]'>Liên hệ</button>
+                            <a href='/about-us#contact' className='uppercase shadow rounded-sm py-1 px-3 bg-white text-[var(--first)]'>Liên hệ</a>
                         </li>
                     </ul>
                     <div className='xl:hidden'>
                         <MdOutlineMenu onClick={() => setIsOpen(!isOpen)} size={40} />
                     </div>
                     <div className={`py-5 px-2 mobileMenu fixed ${isOpen ? "flex" : "hidden"} flex-col top-0 left-0 h-screen w-screen bg-[var(--nineth)] text-black `}>
-                        <div className='flex justify-end text-white'>
+                        <div className='flex justify-end text-white container mx-auto p-2'>
                             <button>
                                 <IoMdClose onClick={() => setIsOpen(!isOpen)} size={40} />
                             </button>
@@ -71,35 +71,13 @@ const Header = () => {
                                     </button>
                                 })
                             }
-                            <a href='/#contact'>
-                                <button onClick={() => setIsOpen(!isOpen)} className='uppercase shadow rounded-sm py-1 px-10 py-2 bg-white text-[var(--first)]'>Liên hệ</button>
+                            <a href='/about-us#contact'>
+                                <button onClick={() => setIsOpen(!isOpen)} className='uppercase shadow rounded-sm px-10 py-2 bg-white text-[var(--first)]'>Liên hệ</button>
                             </a>
                         </div>
                     </div>
                 </div>
             </header>
-            {
-                isContactOpen ?
-                    <div className='fixed w-screen h-screen bg-[var(--eighth)] z-10 flex justify-center items-center'>
-                        <div className='min-w-[40vw] bg-[#F5F6F8] rounded-2xl p-5 shadow-2xs relative'>
-                            <button onClick={() => setIsContactOpen(!isContactOpen)} className='absolute right-[20px] top-[20px] rounded-full hover:shadow-2xl hover:bg-[#ccc]'>
-                                <IoMdClose size={32} />
-                            </button>
-                            <div className='gap-5 flex flex-col'>
-                                <div className='flex justify-center'>
-                                    <Image src="/assets/logo/alpha.png" alt='logo' width={200} height={200} />
-                                </div>
-                                <div className='text-[var(--fourth)] text-center'>
-                                    Hãy để lại thông tin để chúng tôi có thể liên hệ với bạn nhanh nhất
-                                </div>
-                                <div className='p-5 rounded-xl flex flex-col gap-5'>
-                                    <ContactForm />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    : <></>
-            }
         </React.Fragment>
     )
 }

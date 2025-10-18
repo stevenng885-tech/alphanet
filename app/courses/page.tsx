@@ -1,73 +1,34 @@
-import Image from 'next/image'
 import React from 'react'
-
-const cousers = [
-    {
-        name: "Khóa Học Price Action Nâng Cao",
-        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
-        imgSrc: "/assets/courses/course_1.png",
-    },
-    {
-        name: "Khóa Học Price Action Nâng Cao",
-        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
-        imgSrc: "/assets/courses/course_1.png",
-    },
-    {
-        name: "Khóa Học Price Action Nâng Cao",
-        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
-        imgSrc: "/assets/courses/course_1.png",
-    },
-    {
-        name: "Khóa Học Price Action Nâng Cao",
-        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
-        imgSrc: "/assets/courses/course_1.png",
-    },
-    {
-        name: "Khóa Học Price Action Nâng Cao",
-        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
-        imgSrc: "/assets/courses/course_1.png",
-    },
-    {
-        name: "Khóa Học Price Action Nâng Cao",
-        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
-        imgSrc: "/assets/courses/course_1.png",
-    },
-    {
-        name: "Khóa Học Price Action Nâng Cao",
-        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
-        imgSrc: "/assets/courses/course_1.png",
-    },
-    {
-        name: "Khóa Học Price Action Nâng Cao",
-        description: "Phân tích biến động giá, xác định vùng hấp dẫn",
-        imgSrc: "/assets/courses/course_1.png",
-    },
+import Card from './components/Card'
+const ids = [
+    "7560272793259019538",
+    "7559073147220249864",
+    "7560558832624209170",
+    "7562416472836869383",
+    "7561664662526283016",
+    "7561015204050521352",
+    "7559857079775792402",
+    "7559486178852900104",
+    "7558297985046809874",
 ]
 
-const Home = () => {
+const Home = async () => {
     return (
-        <div className='w-full min-h-screen relative'>
-            <video className='fixed top-0 left-0 right-0 bottom-0 min-w-full min-h-screen z-[-10]' autoPlay={true} muted loop id="myVideo">
-                <source src="/assets/videos/chart.mp4" type="video/mp4" />
-                Your browser does not support HTML5 video.
-            </video>
-            <div className='pt-30 container mx-auto flex flex-col'>
-                <div className='flex gap-10 justify-between flex-wrap'>
+        <div className='w-full min-h-screen relative bg-[var(--nineth)]'>
+            <div className='pt-30 container mx-auto flex flex-col '>
+                <div className='flex flex-4 gap-10 justify-center xl:justify-between flex-wrap'>
                     {
-                        cousers.map((item, index) => {
-                            return <div key={item.name + index} className='rounded-xl flex flex-col p-5 gap-3 border divider-right min-w-[20%] text-white'>
-                                <Image className='rounded-xl w-full h-full' alt='course' width={200} height={200} src={item.imgSrc} />
-                                <div className='font-bold text-xl'>{item.name}</div>
-                                <div className='text-[var(--fourth)] text-sm'>{item.description}</div>
-                                <button className='rounded bg-[var(--second)] text-white py-2 px-4'>
-                                    Đăng ký ngay
-                                </button>
-                            </div>
+                        ids.map((id, index) => {
+                            return (
+                                <Card key={id} >
+                                    <iframe className='w-full h-[400px]' src={`https://www.tiktok.com/player/v1/${id}?&rel=0${index === 0 && "&autoplay=1"}`} >
+                                    </iframe>
+                                </Card>
+                            )
                         })
                     }
                 </div>
             </div>
-
         </div>
     )
 }
