@@ -14,42 +14,7 @@ const fqas = [
                 Tạo dựng tư duy chủ động, tự tin thích ứng với sự thay đổi của thời đại số. <br/> <br/>
                 🚀 AlphaNet – Nơi tri thức và công nghệ hội tụ, cùng nhau phát triển trong thế giới số!`
     },
-    {
-        question: "Tham gia Alphanet có mất phí không ?",
-        anwser: "THAM GIA ALPHANET – HOÀN TOÀN KHÔNG MẤT PHÍ!"
-    },
-    {
-        question: "Tôi cần kiến thức trước khi tham gia không?",
-        anwser: `Câu trả lời là: Không cần! 🙌
-                AlphaNet được tạo ra dành cho tất cả mọi người, dù bạn là người mới hay đã có kinh nghiệm trong thị trường.
 
-                 Nếu bạn mới bắt đầu — đội ngũ hướng dẫn sẽ giúp bạn nắm những kiến thức cơ bản nhất:
-                • Hiểu cách thị trường vận hành
-                • Cách quản lý vốn & rủi ro
-                • Cách đọc biểu đồ & nhận biết xu hướng
-
-                Nếu bạn đã có kinh nghiệm — bạn sẽ được cập nhật tin tức, góc nhìn chuyên sâu và cùng thảo luận với các trader chuyên nghiệp trong cộng đồng.
-
-                 AlphaNet không yêu cầu kiến thức trước – chỉ cần bạn có tinh thần học hỏi và mong muốn phát triển.
-                Còn lại, chúng tôi sẽ đồng hành cùng bạn! 💪`
-    },
-    {
-        question: "Làm sao để tham gia Alphanet?",
-        anwser: `Rất đơn giản! 💡
-                AlphaNet là cộng đồng chia sẻ kiến thức & cập nhật thị trường số hoàn toàn miễn phí, nơi bạn có thể học hỏi, thảo luận và phát triển cùng các thành viên có cùng đam mê.
-
-                Cách tham gia:
-                Nhấn vào đường link nhóm chính thức của AlphaNet (Telegram/Zalo/Facebook).
-                 Hoàn tất bước xác nhận để được admin duyệt vào nhóm.
-                 Theo dõi lịch chia sẻ hàng ngày, nhận tin tức, tín hiệu & kiến thức thực chiến từ đội ngũ chuyên gia.
-
-                Tất cả hoàn toàn không mất phí, bạn chỉ cần mang theo tinh thần học hỏi & kỷ luật — AlphaNet sẽ lo phần còn lại!
-
-                 Cùng tham gia để:
-                 Nắm bắt xu hướng thị trường nhanh nhất.
-                 Giao lưu, học hỏi cùng cộng đồng trader năng động.
-                 Cập nhật góc nhìn & chiến lược mới mỗi ngày.`
-    },
 ]
 const FAQs = () => {
     const [isExpand, setIsExpand] = React.useState(-1)
