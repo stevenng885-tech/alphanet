@@ -5,19 +5,50 @@ import { FaPlus } from "react-icons/fa";
 const fqas = [
     {
         question: "Alphanet là gì ?",
-        anwser: 'AlphaNet – Cộng đồng chia sẻ tri thức về thị trường số & công nghệ Blockchain \n\n AlphaNet là nơi kết nối những người yêu thích công nghệ, đam mê tìm hiểu về xu hướng chuyển đổi số và hệ sinh thái Blockchain.\nTại đây, các thành viên cùng nhau trao đổi kiến thức, cập nhật góc nhìn mới, và rèn luyện tư duy phân tích – kỷ luật – logic để hiểu sâu hơn về cách thị trường vận hành trong kỷ nguyên số.\n\n🎯 Sứ mệnh của AlphaNet là xây dựng một không gian học hỏi và phát triển lâu dài, nơi mỗi thành viên đều có thể:\n\nCập nhật thông tin và xu hướng công nghệ mới.\n\nMở rộng tư duy chiến lược, nâng cao kỹ năng phân tích dữ liệu và hành vi thị trường.\n\nTạo dựng tư duy chủ động, tự tin thích ứng với sự thay đổi của thời đại số.\n\n🚀 AlphaNet – Nơi tri thức và công nghệ hội tụ, cùng nhau phát triển trong thế giới số!'
+        anwser: `AlphaNet – Cộng đồng chia sẻ tri thức về thị trường số & công nghệ Blockchain <br/> <br/>
+                AlphaNet là nơi kết nối những người yêu thích công nghệ, đam mê tìm hiểu về xu hướng chuyển đổi số và hệ sinh thái Blockchain. <br/>
+                Tại đây, các thành viên cùng nhau trao đổi kiến thức, cập nhật góc nhìn mới, và rèn luyện tư duy phân tích – kỷ luật – logic để hiểu sâu hơn về cách thị trường vận hành trong kỷ nguyên số. <br/> <br/>
+                🎯 Sứ mệnh của AlphaNet là xây dựng một không gian học hỏi và phát triển lâu dài, nơi mỗi thành viên đều có thể: <br/> <br/>
+                Cập nhật thông tin và xu hướng công nghệ mới. <br/> <br/>
+                Mở rộng tư duy chiến lược, nâng cao kỹ năng phân tích dữ liệu và hành vi thị trường. <br/> <br/>
+                Tạo dựng tư duy chủ động, tự tin thích ứng với sự thay đổi của thời đại số. <br/> <br/>
+                🚀 AlphaNet – Nơi tri thức và công nghệ hội tụ, cùng nhau phát triển trong thế giới số!`
     },
     {
         question: "Tham gia Alphanet có mất phí không ?",
-        anwser: "Cộng đồng miễn phí cho người mới, bạn chỉ cần đăng ký và tham gia nhóm chính thức. Ngoài ra, Alphanet có các chương trình học nâng cao và mentoring riêng, dành cho những ai muốn phát triển chuyên sâu hơn."
+        anwser: "THAM GIA ALPHANET – HOÀN TOÀN KHÔNG MẤT PHÍ!"
     },
     {
         question: "Tôi cần kiến thức trước khi tham gia không?",
-        anwser: "Không cần. Cộng đồng có lộ trình học cơ bản, video hướng dẫn chỉ báo, và hỗ trợ từ mentor để người mới dễ tiếp cận. Mọi người đều có thể bắt đầu từ con số 0."
+        anwser: `Câu trả lời là: Không cần! 🙌
+AlphaNet được tạo ra dành cho tất cả mọi người, dù bạn là người mới hay đã có kinh nghiệm trong thị trường.
+
+📘 Nếu bạn mới bắt đầu — đội ngũ hướng dẫn sẽ giúp bạn nắm những kiến thức cơ bản nhất:
+• Hiểu cách thị trường vận hành
+• Cách quản lý vốn & rủi ro
+• Cách đọc biểu đồ & nhận biết xu hướng
+
+📊 Nếu bạn đã có kinh nghiệm — bạn sẽ được cập nhật tin tức, góc nhìn chuyên sâu và cùng thảo luận với các trader chuyên nghiệp trong cộng đồng.
+
+🚀 AlphaNet không yêu cầu kiến thức trước – chỉ cần bạn có tinh thần học hỏi và mong muốn phát triển.
+Còn lại, chúng tôi sẽ đồng hành cùng bạn! 💪`
     },
     {
         question: "Làm sao để tham gia Alphanet?",
-        anwser: "Rất đơn giản, Truy cập kênh Telegram / Facebook Alphanet. Điền form đăng ký → Nhận hướng dẫn tham gia nhóm"
+        anwser: `Rất đơn giản! 💡
+AlphaNet là cộng đồng chia sẻ kiến thức & cập nhật thị trường số hoàn toàn miễn phí, nơi bạn có thể học hỏi, thảo luận và phát triển cùng các thành viên có cùng đam mê.
+
+📋 Cách tham gia:
+1️⃣ Nhấn vào đường link nhóm chính thức của AlphaNet (Telegram/Zalo/Facebook).
+2️⃣ Hoàn tất bước xác nhận để được admin duyệt vào nhóm.
+3️⃣ Theo dõi lịch chia sẻ hàng ngày, nhận tin tức, tín hiệu & kiến thức thực chiến từ đội ngũ chuyên gia.
+
+💬 Tất cả hoàn toàn không mất phí, bạn chỉ cần mang theo tinh thần học hỏi & kỷ luật — AlphaNet sẽ lo phần còn lại!
+
+✨ Cùng tham gia để:
+📈 Nắm bắt xu hướng thị trường nhanh nhất.
+🤝 Giao lưu, học hỏi cùng cộng đồng trader năng động.
+💡 Cập nhật góc nhìn & chiến lược mới mỗi ngày.`
     },
 ]
 const FAQs = () => {
@@ -45,8 +76,7 @@ const FAQs = () => {
                                         <FaPlus />
                                     </button>
                                 </div>
-                                {isExpand === index && <span className='text-xl text-[var(--fourth)]' >
-                                    {item.anwser}
+                                {isExpand === index && <span dangerouslySetInnerHTML={{ __html: item.anwser }} className='text-xl text-[var(--fourth)]' >
                                 </span>}
                             </li>
                         })

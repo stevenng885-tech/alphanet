@@ -34,7 +34,7 @@ export default function Home() {
                                     </span>
                                 </div>
                                 <div className='mx-10 smoothLeft'>
-                                    <a href="/#contact">
+                                    <a href="/about-us/#contact">
                                         <button className="uppercase bg-[var(--second)] p-5 text-xl rounded-xl">
                                             Đăng ký ngay +
                                         </button>

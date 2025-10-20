@@ -1,4 +1,6 @@
+import Contact from "@/components/common/Contact";
 import Image from "next/image";
+
 const list = [
     {
         title: "Hệ thống khóa học chỉ báo",
@@ -23,25 +25,32 @@ export default function Home() {
             <div className="w-full h-screen flex items-center relative overflow-hidden">
                 <div className="container m-auto flex  gap-10 ">
                     <div className="text-white flex flex-col items gap-10 justify-center ">
-                        <p className="text-8xl BBHSansBogle font-bold tracking-wider">
+                        <p className="text-2xl xl:text-8xl BBHSansBogle font-bold tracking-wider">
                             <span className="text-[var(--seventh)] text-troke2">ALPHA NET</span>
                         </p>
-                        <p className="text-5xl text-[var(--seventh)] BBHSansBogle font-bold tracking-wider">
+                        <p className="text-xl xl:text-5xl text-[var(--seventh)] BBHSansBogle font-bold tracking-wider">
                             KIẾN THỨC THỰC CHIẾN, CẬP NHẬT TỨC THỜI
                         </p>
-                        <p className="text-2xl">
-                            Cộng Đồng Crypto & tài chính hàng đầu tại Việt Nam, nơi chia sẻ kiến thức và tin tức thị trường mỗi ngày
+                        <p className="text-sm xl:text-2xl" dangerouslySetInnerHTML={{
+                            __html: `AlphaNet – Cộng đồng chia sẻ tri thức về thị trường số & công nghệ Blockchain <br/> <br/>
+                                    AlphaNet là nơi kết nối những người yêu thích công nghệ, đam mê tìm hiểu về xu hướng chuyển đổi số và hệ sinh thái Blockchain. <br/>
+                                    Tại đây, các thành viên cùng nhau trao đổi kiến thức, cập nhật góc nhìn mới, và rèn luyện tư duy phân tích – kỷ luật – logic để hiểu sâu hơn về cách thị trường vận hành trong kỷ nguyên số. <br/> <br/>
+                                    🎯 Sứ mệnh của AlphaNet là xây dựng một không gian học hỏi và phát triển lâu dài, nơi mỗi thành viên đều có thể: <br/> 
+                                    Cập nhật thông tin và xu hướng công nghệ mới. <br/> 
+                                    Mở rộng tư duy chiến lược, nâng cao kỹ năng phân tích dữ liệu và hành vi thị trường. <br/> 
+                                    Tạo dựng tư duy chủ động, tự tin thích ứng với sự thay đổi của thời đại số. <br/> 
+                                    🚀 AlphaNet – Nơi tri thức và công nghệ hội tụ, cùng nhau phát triển trong thế giới số!`}}>
+
                         </p>
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100094833382394" className="bg-[var(--second)] w-fit rounded p-2 px-5 text-2xl uppercase">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100079515246834" className="bg-[var(--second)] w-fit rounded p-2 px-5 xl:text-3xl uppercase">
                             Tìm hiểu thêm
                         </a>
                     </div>
 
                 </div>
-                <video className='absolute top-0 left-0 right-0 bottom-0 min-w-full min-h-screen z-[-10]' autoPlay={true} muted loop id="myVideo">
-                    <source src="/assets/videos/alphanet-bg-video1.mp4" type="video/mp4" />
-                    Your browser does not support HTML5 video.
-                </video>
+                <div className='absolute top-0 bottom-0 min-w-screen z-[-10] ' >
+                    <Image className="h-full" src="/assets/home-bg.png" alt="bg-img" width={2000} height={2000} />
+                </div>
             </div>
             <div>
                 <div className="container m-auto py-14">
@@ -60,8 +69,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div>
-
+            <div className='bg-[var(--nineth)] text-white'>
+                <div className='container mx-auto'>
+                    <Contact />
+                </div>
             </div>
         </main>
     );

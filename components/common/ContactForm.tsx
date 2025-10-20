@@ -121,13 +121,13 @@ const ContactForm = () => {
                     <a href='https://t.me/Crypt0vn' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
                         <FaTelegramPlane />
                     </a>
-                    <a href='https://www.facebook.com/profile.php?id=100094833382394' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
+                    <a href='https://www.facebook.com/profile.php?id=100079515246834' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
                         <FaFacebookF />
                     </a>
                     <a href='https://zalo.me/g/yowula280' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
                         <SiZalo />
                     </a>
-                    <a href='#' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
+                    <a href='https://www.tiktok.com/search?q=ALPHANET&t=1760590899718' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
                         <FaTiktok />
                     </a>
                     <a href='tel:0586636343' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
