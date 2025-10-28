@@ -5,17 +5,20 @@ const list = [
     {
         title: "Hệ thống khóa học chỉ báo",
         description: "Cộng đồng Crypto & tài chính",
-        iconSrc: "/assets/icons/desktop-computer.png"
+        iconSrc: "/assets/icons/desktop-computer.png",
+        href: "https://zalo.me/g/wadheq992"
     },
     {
         title: "Cộng Đồng Mạnh Mẽ",
         description: "",
-        iconSrc: "/assets/icons/people.png"
+        iconSrc: "/assets/icons/people.png",
+        href: "https://zalo.me/g/dxxkfh223"
     },
     {
         title: "Tin Tức TứcThời",
         description: "Tạo Lịch, Kết Nối",
-        iconSrc: "/assets/icons/document.png"
+        iconSrc: "/assets/icons/document.png",
+        href: "https://zalo.me/g/rrzpaz468"
     },
 ]
 
@@ -57,13 +60,13 @@ export default function Home() {
                     <div className="flex justify-between">
                         {
                             list.map((item, index) => {
-                                return <div key={index} className="flex flex-col gap-5 items-center">
+                                return <a key={index} target="_blank" href={item.href} className="flex flex-col gap-5 items-center cursor-pointer">
                                     <div className="flex justify-center">
                                         <Image src={item.iconSrc} width={120} height={120} alt="icon" />
                                     </div>
                                     <p className="font-bold uppercase text-2xl"> {item.title}</p>
                                     <p className="text-xl"> {item.description}</p>
-                                </div>
+                                </a>
                             })
                         }
                     </div>

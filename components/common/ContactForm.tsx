@@ -124,7 +124,7 @@ const ContactForm = () => {
                     <a href='https://www.facebook.com/profile.php?id=100079515246834' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
                         <FaFacebookF />
                     </a>
-                    <a href='https://zalo.me/g/yryszv608' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
+                    <a href='https://zalo.me/g/dxxkfh223' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
                         <SiZalo />
                     </a>
                     <a href='https://www.tiktok.com/search?q=ALPHANET&t=1760590899718' target='_blank' className='cursor-pointer border border-[var(--second)] rounded p-2 flex justify-center items-center'>
